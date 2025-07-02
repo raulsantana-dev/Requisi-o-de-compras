@@ -1,26 +1,47 @@
-# 🛠️ Automacao de Requisição de Compras no SAP (TypeScript)
+# 🛠️ Requisição de Compras no SAP (TypeScript)
 
-Este projeto realiza a automação da criação de requisições de compras para todas as areas da empresa no SAP a partir de planilhas `.xlsx`, executando scripts `.vbs`, manipulando arquivos locais e salvando logs em um banco de dados...
+Este projeto realiza a automação da criação de requisições de compras para todas as areas da empresa no SAP a partir de planilhas `.xlsx`, executando scripts `.vbs`, manipulando arquivos locais e salvando logs em um banco de dados.
+
+# ✅ Tecnologias utilizadas
+
+## ✅ Tecnologias utilizadas
+
+ **Node.js**  
+ **TypeScript**  
+ **SAP GUI Scripting (VBS)**  
+ **Snowflake-SDK**  
+ **xlsx**  
+ **shelljs**  
+ **dotenv**  
+ **moment**  
+
+
 
 # 📁 Estrutura de Pastas
-src/
-├── index.ts                     # Ponto de entrada principal
-├── types/
-│   └── Iexcel.ts               # Tipagem da planilha Excel
-├── utils/
-│   ├── helpers.ts              # Funções utilitárias (datas, usuário, etc.)
-│   └── transformadores.ts      # Processamento dos dados do Excel
-├── services/
-│   ├── arquivoService.ts       # Leitura, escrita e renomeio de arquivos
-│   ├── logService.ts           # Log em banco de dados Snowflake
-│   └── sapService.ts           # Execução e login SAP via VBS
-│   └── processamentoService.ts # Lógica principal de automação
+- index.ts — Ponto de entrada principal
+- app.ts - Logica principal da automação
 
+### 📁 database
+- `snowflake.ts` —   Log em banco de dados Snowflake
+
+### 📁 config
+- `config.ts` — Carrega variáveis de ambiente e configurações gerais  
+
+### 📁 services  
+- `sapService.ts` — Execução e login SAP via VBS  
+- `processamentoService.ts` — Leitura, escrita e renomeio de arquivos
+
+### 📁 utils
+- `helpers.ts` — Funções utilitárias (datas, usuário, etc.)  
+- `transformadores.ts` — Processamento dos dados do Excel
+
+### 📁 types
+- `Iexcel.ts` — Tipagem da planilha Excel
 
 # ▶️ Como Executar
-1. Instale as dependências: `npm install`
-2. Configure as variáveis de ambiente (`config.env`)
-3. Execute o script principal: `npm start`
+Instale as dependências: `npm install`
+Configure as variáveis de ambiente (`config.env`)
+Execute o script principal: `npm start`
 
 # 🧾 Requisitos
 
