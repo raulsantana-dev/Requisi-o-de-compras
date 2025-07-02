@@ -1,0 +1,59 @@
+# 🌱 Ambiente
+.env
+.env.local
+.env.*.local
+
+# 🧱 Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔧 Build / Transpiled files
+dist/
+build/
+*.tsbuildinfo
+
+# 🧪 Test coverage
+coverage/
+*.lcov
+
+# 🗂️ IDEs e ferramentas
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# 💻 Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 🧾 Logs e temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.txt
+
+# ⚠️ Scripts sensíveis
+*.vbs
+*.bat
+*.sh
+*.ps1
+
+# 📊 Excel temporários
+~$*.xlsx
+
+# 🧪 Testes temporários
+test-output/
+
+# 💾 Backups ou arquivos de execução local
+*.old
+*.backup
+*.orig
+*.rej
